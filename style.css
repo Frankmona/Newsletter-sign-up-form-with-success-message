@@ -16,7 +16,8 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    display: flex;  
+    display: flex;
+    
 }
 
 .article_box{
@@ -93,7 +94,7 @@ input:focus {
     background-color: hsl(235, 18%, 26%);
     border: 0;
     border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     color: white;
     cursor: pointer;
@@ -104,3 +105,41 @@ input:focus {
     background: linear-gradient(to left, hsl(4, 100%, 67%), hsl(4, 58%, 68%));
     box-shadow: 0px 4px 12px 0px hsl(4, 39%, 56%);
 }
+
+/* styling for error */
+
+.p_error{
+    color: hsl(4, 100%, 67%);
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: end;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    visibility: hidden;
+}
+
+.form-control.error input{
+    border-color: hsl(4, 100%, 67%);
+}
+.form-control.error .p_error{
+    visibility: visible;
+}
+.form-control.error .section{
+    visibility: visible;
+}
+
+/* section for sucess message */
+
+.success_box{
+    width: 260px;
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -350px;
+}
+
+/* browse how to display and email address which was inputed in the input section in a sucess message using javascript */
