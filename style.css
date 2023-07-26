@@ -17,6 +17,7 @@ body{
     margin-right: auto;
     margin-top: 100px;
     display: flex;
+    visibility: visible;
     
 }
 
@@ -125,9 +126,7 @@ input:focus {
 .form-control.error .p_error{
     visibility: visible;
 }
-.form-control.error .section{
-    visibility: visible;
-}
+
 
 /* section for sucess message */
 
@@ -140,6 +139,32 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
     margin-top: -350px;
+    visibility: hidden;
 }
+
+.img_success{
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.success_article{
+    font-family: 'Roboto', sans-serif; 
+    padding: 20px;
+}
+
+.p_successArticle{
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.success-message.success .success_box{
+    visibility: visible;
+}
+
+.success-message.success .section{
+    visibility: hidden;
+}
+
+
 
 /* browse how to display and email address which was inputed in the input section in a sucess message using javascript */
