@@ -157,14 +157,14 @@ input:focus {
     padding-top: 20px;
 }
 
-.success-message.success .success_box{
-    visibility: visible;
-}
+
 
 .success-message.success .section{
     visibility: hidden;
 }
 
-
+.success-message.success .success_box{
+    visibility: visible;
+}
 
 /* browse how to display and email address which was inputed in the input section in a sucess message using javascript */
