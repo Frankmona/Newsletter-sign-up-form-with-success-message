@@ -11,7 +11,7 @@ body{
 .section{
     background-color: white;
     width: 580px;
-    max-height: 375px;
+    height: 420px;
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -63,7 +63,7 @@ h1{
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight:bolder;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 5px;
 }
 
@@ -75,6 +75,10 @@ input{
     border: 1px solid #ccc;
 }
 
+.input_text{
+    padding-left: 10px;
+}
+
 input::placeholder {
     padding-left: 10px;
   }
@@ -84,9 +88,14 @@ input:focus {
    
   }
 
+
+
 .img_desktopIllustration{
-   height: 350px;
+   height: 400px;
    margin: 10px;
+}
+.img_mobileIllustration{
+    display:none
 }
 
 .btn{
@@ -167,4 +176,121 @@ input:focus {
     visibility: visible;
 }
 
-/* browse how to display and email address which was inputed in the input section in a sucess message using javascript */
+/* Media Query */
+
+@media screen  and (max-width: 600px){
+    body{
+        background-color:white;
+    }
+    
+    .section{
+        background-color: white;
+        width:auto;
+        height: 850px;
+        border-radius: 0px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -100px;
+        display: flex;
+        flex-direction: column-reverse;
+        visibility: visible;  
+    }
+
+
+    .img_desktopIllustration{
+        height: 400px;
+        margin: 0px;
+        display: none;
+     }
+     .img_mobileIllustration{
+         display: block;
+         margin-top: -555px;
+         width: 100%;
+         height: 400px;
+     } 
+
+     .article_box{
+        /* background-color: aquamarine; */
+        width: auto;
+        height: auto;
+        font-family: 'Roboto', sans-serif;
+        margin-top: -200px;
+    }
+    
+    .article{
+      margin: 25px;  
+    }
+
+    h1{
+        font-size: 50px;
+    }
+    .p_article{
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .custom-list li {
+        color: #333;
+        font-size: 18px;
+        line-height: 1.3;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      }
+
+      .p_email_address{
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight:bolder;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        
+    }
+
+    input{
+        width: 320px;
+        height: 55px;
+        border-radius: 8px;
+        outline: none;
+        border: 1px solid #ccc;
+     
+    }
+
+    .btn{
+        width: 320px;
+        height: 55px;
+        background-color: hsl(235, 18%, 26%);
+        border: 0;
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        color: white;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    
+    .success_box{
+        width: auto;
+        height: 500px;
+        /* background-color: blue; */
+        border-radius: 15px;
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -600px;
+        visibility: hidden;
+    }
+
+    .img_success{
+        width: 60px;
+        margin-bottom: 30px;
+    }
+
+    .p_successArticle{
+        font-size: 18px;
+        padding-top: 20px;
+        line-height: 1.5;
+    }
+}

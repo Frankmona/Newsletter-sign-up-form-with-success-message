@@ -5,11 +5,16 @@ const DismissButton = document.getElementById('button');
 const emailTxt = document.querySelector(".e-email");
 const input = document.querySelector("input[name='email']");
 
+// // Email validation: to check if email is valid
+function isValid(email){
+    const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    return re.test(email)
+}
+
 // function that shows the error
 function showError(input){
     const formControl = input.parentElement;
     formControl.className = 'form-control error'
-    const p = formControl.querySelector('p')
 }
 
 // function that shows the success
@@ -29,20 +34,23 @@ function removeSuccess(){
 // Event listener listening for the submit event
 form.addEventListener('submit', function(e){
     e.preventDefault();
-    
+    // inputing email address into the success response message
     let gottenMail = input.value ;
     gottenMail = gottenMail.toLowerCase();
     emailTxt.innerHTML="";
     emailTxt.innerHTML=gottenMail;
-
+// end
 // console.log('frank');
     if(email.value === ''){
         showError(email);
      }
+
+    else if (!isValid(email.value)){
+      showError(email, "invalid email");
+    }
     else{
         showSuccess();
      }
-
 })
 
 // Event listener listening for the click dismissal event
