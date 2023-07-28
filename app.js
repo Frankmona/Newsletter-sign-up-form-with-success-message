@@ -8,9 +8,9 @@ const inputPlaceholderElement = document.getElementById('myInput');
 
 
 //   Action to remove placeholder when user begins to type
-inputPlaceholderElement.addEventListener('input', function () {
-    this.removeAttribute('placeholder');
-  });
+// inputPlaceholderElement.addEventListener('input', function () {
+//     this.removeAttribute('placeholder');
+//   });
 
 // // Email validation: to check if email is valid
 function isValid(email){
