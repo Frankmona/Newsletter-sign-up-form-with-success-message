@@ -7,10 +7,6 @@ const input = document.querySelector("input[name='email']");
 const inputPlaceholderElement = document.getElementById('myInput');
 
 
-//   Action to remove placeholder when user begins to type
-// inputPlaceholderElement.addEventListener('input', function () {
-//     this.removeAttribute('placeholder');
-//   });
 
 // // Email validation: to check if email is valid
 function isValid(email){
@@ -62,11 +58,14 @@ form.addEventListener('submit', function(e){
 
 // Event listener listening for the click dismissal event
 DismissButton.addEventListener('click', function(e){
-    e.preventDefault()
+    // e.preventDefault()
     // console.log('frank');
     if (successMessage[1].classList.contains("success")) {
         removeSuccess();
       }
 })
 
-    
+    //   Action to remove placeholder when user begins to type
+// inputPlaceholderElement.addEventListener('input', function () {
+//     this.removeAttribute('placeholder');
+//   });
