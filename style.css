@@ -145,6 +145,7 @@ input:focus {
     background-color: white;
     border-radius: 15px;
     position: relative;
+    word-wrap: break-word;
     margin-left: auto;
     margin-right: auto;
     margin-top: -350px;
@@ -279,7 +280,8 @@ input:focus {
         position: relative;
         margin-left: 0;
         margin-right: 0;
-        margin-top: -600px;
+        margin-top: -580px;
+        word-wrap: break-word;
         visibility: hidden;
     }
 
