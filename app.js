@@ -4,6 +4,13 @@ const successMessage = document.querySelectorAll('.success-message');
 const DismissButton = document.getElementById('button');
 const emailTxt = document.querySelector(".e-email");
 const input = document.querySelector("input[name='email']");
+const inputPlaceholderElement = document.getElementById('myInput')
+
+
+//   Action to remove placeholder when user begins to type
+inputPlaceholderElement.addEventListener('input', function () {
+    this.removeAttribute('placeholder');
+  });
 
 // // Email validation: to check if email is valid
 function isValid(email){
